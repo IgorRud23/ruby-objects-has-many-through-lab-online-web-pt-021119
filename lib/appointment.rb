@@ -17,9 +17,7 @@ def self.all
 end
 
 def patient
-@@all.select do |appoint|
-  appoint.patient == patient
-end
+
 end
 
 
