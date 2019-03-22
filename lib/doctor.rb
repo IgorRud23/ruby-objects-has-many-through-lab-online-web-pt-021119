@@ -24,7 +24,9 @@ end
 end
 
 def patients
-Patient.all
+appointments.map do |appointment|
+  appointment.patients
+end 
 end
 
 end
