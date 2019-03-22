@@ -18,13 +18,11 @@ end
 
 def appointment
   @@all.select do |appoint|
-    appoint.patient == self.patient 
+    appoint.patient == self.patient
   end
 end
 
-def patient
-  appointment.map do |appoint|
-    appoint.patient ==
+
 
 
 end
