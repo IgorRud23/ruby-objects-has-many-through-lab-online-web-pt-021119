@@ -24,7 +24,7 @@ end
 
 def patient
   appointment.map do |appoint|
-    appoint.patient == 
+    appoint.patient ==
 
 
 end
