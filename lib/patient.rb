@@ -22,9 +22,7 @@ Appointment.all
 end
 
 def patient
-  Appointment.all.select do |appoint|
-    appoint.patient == self
-  end
+  Appointment.all
 end
 
 end
