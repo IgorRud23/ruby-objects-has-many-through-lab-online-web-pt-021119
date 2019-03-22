@@ -1,6 +1,6 @@
 class Doctor
 
-attr_accessor :name
+attr_accessor :name, :appointment, :patient 
 
 @@all = []
 
@@ -18,7 +18,9 @@ Appointment.new(date, patient, self)
 end
 
 def appointments
-Appointment.all
+Appointment.all select do |appointment|
+  appointment.doctor == self 
+end 
 end
 
 def patients
