@@ -17,11 +17,7 @@ def self.all
 end
 
 def patient
-  Patient.all.select do |patient|
-    patient.appointments == self
+  self.patient
 end
-end
-
-
 
 end
