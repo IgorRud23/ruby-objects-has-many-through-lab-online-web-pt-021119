@@ -21,8 +21,4 @@ def appointments
 Appointment.all
 end
 
-def patient
-  Appointment.all
-end
-
 end
